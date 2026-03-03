@@ -9,9 +9,29 @@ A lightweight Adobe Premiere Pro extension designed to quickly import `.srt` sub
 - **Color Customization:** Choose from all 8 standard Premiere Pro marker colors (Green, Red, Purple, Orange, Yellow, White, Blue, Cyan).
 - **Intelligent Validation:**
   - Automatically lists all sequences in the current project.
-  - Compares SRT filename with the selected sequence name and issues a **native Premiere Pro confirmation prompt** if they don't match.
+  - Compares SRT filename with the selected sequence name and issues a confirmation if they don't match.
 - **Robust Labeling:** Subtitle text is applied to both the marker **Name** and **Comments** for maximum visibility in the timeline and Markers panel.
-- **Developer Friendly:** Includes "Refresh" and "Reload Panel" buttons for quick UI updates and debugging.
+
+## Installation
+
+To install the extension, follow these steps:
+
+1. **Download the extension:**
+   - Click the green **Code** button at the top of this page and select **Download ZIP**.
+   - Extract the contents of the ZIP file to a folder on your computer.
+   - *Alternatively, if you use Git, clone the repository:* `git clone https://github.com/brohoja/import-srt-as-markers.git`
+
+2. **Copy the extension folder:**
+   - **macOS:** Copy the `import-srt-as-markers` directory to `~/Library/Application Support/Adobe/CEP/extensions/`.
+   - **Windows:** Copy the `import-srt-as-markers` directory to `C:\Program Files (x86)\Common Files\Adobe\CEP\extensions\`.
+
+2. **Enable Debug Mode (Required for unsigned extensions):**
+   Open your terminal or command prompt and run the following command to allow Premiere Pro to load unsigned extensions:
+   - **macOS:** `defaults write com.adobe.CSXS.12 PlayerDebugMode 1`
+   - **Windows:** Run `reg add "HKEY_CURRENT_USER\Software\Adobe\CSXS.12" /v PlayerDebugMode /t REG_SZ /d 1 /f`
+   *(Note: Use `CSXS.11` for older Premiere Pro versions or `CSXS.13` for the latest releases).*
+
+3. **Restart Premiere Pro.** The extension will be available under `Window > Extensions > SRT to Markers`.
 
 ## Usage
 
@@ -20,7 +40,7 @@ A lightweight Adobe Premiere Pro extension designed to quickly import `.srt` sub
 3. **Choose SRT File:** Select your `.srt` file.
 4. **Select Color:** Pick the desired marker color.
 5. **Import:** Click **Import as markers**. 
-   - If the filename doesn't match the sequence name, you will be prompted to confirm.
+   - If the filename doesn't match the sequence name, you will be asked to confirm.
 6. **Verify:** Your markers will appear on the selected sequence at the exact timecodes specified in the SRT.
 
 ## Technical Details
