@@ -19,7 +19,7 @@ To install the extension, follow these steps:
 1. **Download the extension:**
    - Click the green **Code** button at the top of this page and select **Download ZIP**.
    - Extract the contents of the ZIP file to a folder on your computer.
-   - *Alternatively, if you use Git, clone the repository:* `git clone https://github.com/brohoja/import-srt-as-markers.git`
+   - *Alternatively, if you use Git, clone the repository:* `git clone https://github.com/KristianBroholm/ppro-import-srt-as-markers.git`
 
 2. **Copy the extension folder:**
    - **macOS:** Copy the `import-srt-as-markers` directory to `~/Library/Application Support/Adobe/CEP/extensions/`.
