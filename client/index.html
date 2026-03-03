@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SRT to Markers</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hostElt">
+    <div id="content">
+        <h1>SRT to Markers</h1>
+        
+        <div class="control-group">
+            <label for="sequenceSelect">Select sequence:</label>
+            <select id="sequenceSelect">
+                <option value="">Loading sequences...</option>
+            </select>
+            <button id="refreshSequences" class="topcoat-button">Refresh</button>
+        </div>
+
+        <div class="control-group">
+            <label for="srtFile">Select SRT file:</label>
+            <input type="file" id="srtFile" accept=".srt">
+        </div>
+
+        <div class="control-group">
+            <label for="colorSelect">Marker Color:</label>
+            <select id="colorSelect">
+                <option value="0">Green</option>
+                <option value="1">Red</option>
+                <option value="2">Purple</option>
+                <option value="3">Orange</option>
+                <option value="4">Yellow</option>
+                <option value="5">White</option>
+                <option value="6">Blue</option>
+                <option value="7">Cyan</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <button id="importBtn" class="topcoat-button--large--cta">Import as markers</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div class="control-group" style="margin-top: 40px; border-top: 1px solid #444; padding-top: 10px;">
+            <button id="reloadBtn" class="topcoat-button">Reload Panel</button>
+        </div>
+    </div>
+
+    <!-- Adobe CSInterface library -->
+    <script src="./CSInterface.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

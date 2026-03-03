@@ -1,0 +1,79 @@
+body {
+    background-color: #282828;
+    color: #e6e6e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select, input[type="file"] {
+    width: 100%;
+    background-color: #3e3e3e;
+    border: 1px solid #555;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+    padding: 8px 12px;
+    margin-top: 5px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button.topcoat-button--large--cta {
+    background-color: #1473e6;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+button.topcoat-button--large--cta:hover {
+    background-color: #0d66d0;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    font-size: 12px;
+    min-height: 20px;
+    text-align: center;
+}
+
+#refreshSequences {
+    width: auto;
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 11px;
+}
